@@ -1,0 +1,7 @@
+
+__pycache__/
+*.pyc
+venv/
+.env
+saved_models/*.pkl
+.ipynb_checkpoints/

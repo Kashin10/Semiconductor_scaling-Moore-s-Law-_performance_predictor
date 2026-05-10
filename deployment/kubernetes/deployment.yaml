@@ -1,0 +1,31 @@
+
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: scalesage-gpp
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: scalesage-gpp
+
+  template:
+
+    metadata:
+      labels:
+        app: scalesage-gpp
+
+    spec:
+
+      containers:
+
+      - name: scalesage-gpp
+
+        image: scalesage-gpp:latest
+
+        ports:
+        - containerPort: 8000
